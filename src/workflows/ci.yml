@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main  # Укажите ветку, для которой будет работать автоматизация
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'  # Укажите версию Node.js, которую вы используете
+
+    - name: Install dependencies
+      run: npm install  # Установите зависимости вашего проекта
+
+    - name: Run tests
+      run: npm test  # Запустите тесты вашего проекта
