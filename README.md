@@ -24,7 +24,7 @@
 
 ```bash
 # Клонируем репозиторий
-git clone https://github.com/USERNAME/tspp2025-webapp.git
+git clone https://github.com/Maxty9378/tspp2025-webapp.git
 
 # Переходим в директорию проекта
 cd tspp2025-webapp
